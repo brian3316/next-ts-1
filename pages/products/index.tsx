@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { CSSProperties } from "react";
 import styles from "../../styles/Home.module.css";
 
@@ -18,7 +19,7 @@ export default function index({ products }: InnerProps) {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        <a href="/">HOME</a>
+        <Link href="/">HOME</Link>
       </h1>
       {products.length > 0
         ? products.map((product) => (
